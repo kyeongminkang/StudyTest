@@ -15,8 +15,9 @@ namespace SearchIdx_3
             {
                 if (a[i] == key)
                 {
+
+                    idx[count] =i;
                     count++;
-                    idx[i] = a[i];
                 }
             }
 
@@ -38,19 +39,22 @@ namespace SearchIdx_3
             Console.Write("검색할 값 : ");
             int key = Convert.ToInt32(Console.ReadLine());
 
-            int[] idx = new int[] { };
+            int[] idx = new int[n];
             int num = searchIndx(a, n, key, idx);
 
-            //int idx = seqSearch(a, n, key);
+            if (num == 0)
+            {
+                Console.WriteLine("그 값의 요소가 없습니다.");
+            }
+            else
+            {
+                //Console.WriteLine(num);
+                for (int i = 0; i < num; i++)
+                    Console.WriteLine("그 값은 " + "a[" + idx[i] + "]에 있습니다.");
 
-            //if (idx == -1)
-            //{
-            //    Console.WriteLine("그 값의 요소가 없습니다.");
-            //}
-            //else
-            //{
-            //    Console.WriteLine(key + "는 x[" + idx + "]에 있습니다.");
-            //}
+
+            }
+
         }
     }
 }
