@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeqSearch", "Chapter3\SeqSearch.csproj", "{4A9EE464-D635-4990-A815-CF1E2E26CF19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeqSearchFor", "SeqSearchFor\SeqSearchFor.csproj", "{5EB6A45D-5297-4398-9BB1-90417FF7CAD7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeqSearchSen", "SeqSearchSen\SeqSearchSen.csproj", "{3D928D2D-36E5-434F-B358-7E16FCA36697}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinSearch", "BinSearch\BinSearch.csproj", "{D3AAB06B-127B-4A71-BCA0-BA86274331D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeqSearchSenFor_1", "SeqSearchSenFor_1\SeqSearchSenFor_1.csproj", "{F82F6156-88F5-40F9-9C7B-B6E776BA4402}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeqSearch2_2", "SeqSearch2_2\SeqSearch2_2.csproj", "{98B02A32-0D27-4F02-923C-BBAF03FA3634}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SearchIdx_3", "SearchIdx_3\SearchIdx_3.csproj", "{AFA534BD-C728-4714-A472-4530933C5370}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4A9EE464-D635-4990-A815-CF1E2E26CF19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A9EE464-D635-4990-A815-CF1E2E26CF19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A9EE464-D635-4990-A815-CF1E2E26CF19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A9EE464-D635-4990-A815-CF1E2E26CF19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EB6A45D-5297-4398-9BB1-90417FF7CAD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EB6A45D-5297-4398-9BB1-90417FF7CAD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EB6A45D-5297-4398-9BB1-90417FF7CAD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EB6A45D-5297-4398-9BB1-90417FF7CAD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D928D2D-36E5-434F-B358-7E16FCA36697}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D928D2D-36E5-434F-B358-7E16FCA36697}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D928D2D-36E5-434F-B358-7E16FCA36697}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D928D2D-36E5-434F-B358-7E16FCA36697}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3AAB06B-127B-4A71-BCA0-BA86274331D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3AAB06B-127B-4A71-BCA0-BA86274331D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3AAB06B-127B-4A71-BCA0-BA86274331D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3AAB06B-127B-4A71-BCA0-BA86274331D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F82F6156-88F5-40F9-9C7B-B6E776BA4402}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F82F6156-88F5-40F9-9C7B-B6E776BA4402}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F82F6156-88F5-40F9-9C7B-B6E776BA4402}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F82F6156-88F5-40F9-9C7B-B6E776BA4402}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98B02A32-0D27-4F02-923C-BBAF03FA3634}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98B02A32-0D27-4F02-923C-BBAF03FA3634}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98B02A32-0D27-4F02-923C-BBAF03FA3634}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98B02A32-0D27-4F02-923C-BBAF03FA3634}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFA534BD-C728-4714-A472-4530933C5370}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFA534BD-C728-4714-A472-4530933C5370}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFA534BD-C728-4714-A472-4530933C5370}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFA534BD-C728-4714-A472-4530933C5370}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9F7DCFF3-5A43-4E66-AFE5-21848A4D8AAA}
+	EndGlobalSection
+EndGlobal

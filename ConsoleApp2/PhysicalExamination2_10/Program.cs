@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PhysicalExamination
+namespace PhysicalExamination2_10
 {
     class Program
     {
@@ -28,7 +28,7 @@ namespace PhysicalExamination
         {
             double sum = 0;
 
-            for (int i=0; i< dat.Length; i++)
+            for (int i = 0; i < dat.Length; i++)
             {
                 sum += dat[i].height;
             }
@@ -41,9 +41,9 @@ namespace PhysicalExamination
             int i = 0;
 
             dist[i] = 0;
-            for (i = 0; i<dat.Length; i++)
+            for (i = 0; i < dat.Length; i++)
             {
-                if(dat[i].vision >= 0.0 && dat[i].vision <= VMAX / 10.0)
+                if (dat[i].vision >= 0.0 && dat[i].vision <= VMAX / 10.0)
                 {
                     dist[(int)(dat[i].vision * 10)]++;
 
@@ -70,9 +70,9 @@ namespace PhysicalExamination
 
             Console.WriteLine("신체검사 리스트");
             Console.WriteLine("이름       키  시력");
-            for (int i=0; i<x.Length; i++)
+            for (int i = 0; i < x.Length; i++)
             {
-                Console.WriteLine($"{x[i].name, -5}   {x[i].height}  {x[i].vision}");
+                Console.WriteLine($"{x[i].name,-5}   {x[i].height}  {x[i].vision}");
             }
 
             Console.WriteLine($"평균 키 : {aveHeight(x)}");
@@ -81,15 +81,20 @@ namespace PhysicalExamination
 
             Console.WriteLine("시력분포");
 
-            for (int i=0; i< VMAX; i++)
+            for (int i = 0; i < VMAX; i++)
             {
-                Console.WriteLine($"{i / 10.0} ~ : {vdist[i]}명");
+                Console.Write($"{i / 10.0} ~ : ");
+                for (int j=0; j<vdist[i]; j++)
+                {
+                    Console.Write("*");
+                }
+                Console.WriteLine();
             }
 
 
 
 
         }
-        
+
     }
 }

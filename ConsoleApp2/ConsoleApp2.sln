@@ -53,6 +53,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArraySumforIn", "ArraySumfo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhysicalExamination", "PhysicalExamination\PhysicalExamination.csproj", "{C99CAF8D-1E67-481B-96BA-4DAF699A5B9A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhysicalExamination2_10", "PhysicalExamination2_10\PhysicalExamination2_10.csproj", "{38281BA7-EC9F-4F61-BF9E-6CF22D868D78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YMD_11", "YMD_11\YMD_11.csproj", "{EF071923-BA20-4C88-AFC1-B5048D9B6F8F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -159,6 +163,14 @@ Global
 		{C99CAF8D-1E67-481B-96BA-4DAF699A5B9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C99CAF8D-1E67-481B-96BA-4DAF699A5B9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C99CAF8D-1E67-481B-96BA-4DAF699A5B9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38281BA7-EC9F-4F61-BF9E-6CF22D868D78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38281BA7-EC9F-4F61-BF9E-6CF22D868D78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38281BA7-EC9F-4F61-BF9E-6CF22D868D78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38281BA7-EC9F-4F61-BF9E-6CF22D868D78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF071923-BA20-4C88-AFC1-B5048D9B6F8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF071923-BA20-4C88-AFC1-B5048D9B6F8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF071923-BA20-4C88-AFC1-B5048D9B6F8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF071923-BA20-4C88-AFC1-B5048D9B6F8F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
