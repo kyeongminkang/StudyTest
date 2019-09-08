@@ -1,70 +1,42 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace BinSearch_4
+namespace binSearchX2_5
 {
     class Program
     {
-        public static int binSearch4(int[]a, int n, int key)
+        public static int binSearchX_5(int[] a, int n, int key)
         {
             int pl = 0;
             int pr = n - 1;
-            int pc = (pl + pr) / 2;
 
-            Console.Write("   |");
-            for (int i = 0; i < n; i++)
+            do
             {
-                Console.Write($"{i,4:D}");
-            }
-            Console.WriteLine();
-            Console.Write("---+");
-            for (int i = 0; i < n * 4; i++)
-            {
-                Console.Write("-");
-            }
-            Console.WriteLine();
-
-            Console.WriteLine("   |");
-
-            for (int i = 0; i < n; i++)
-            {
-
-
-
-                Console.Write("   |");
-                for (int j = 0; j < n; j++)
+                int pc = (pl + pr) / 2;
+                if (a[pc] == key)
                 {
-
-                    Console.Write($"{a[j],4:D}");
-
+                    for(; pc>pl; pc--) // pc가 이미 값 지정되어 있어서 ?? 맞는가?
+                    {
+                        if (a[pc - 1] < key)
+                        {
+                            break;
+                        }
+                    }
+                    return pc;
+                    
                 }
-                Console.WriteLine();
-                Console.WriteLine("   |");
-            }
-
-            for (int i=0; i<n; i++)
-            {      
-                if (a[i] == key)
-                {
-                    return i;
-                }else if (pc < key)
+                else if (a[pc] < key)
                 {
                     pl = pc + 1;
-                }else
-                {
-                    pr = pc - 1;
                 }
-            }
-
-            
-            // passㅜㅜ
+                else
+                {
+                    pr = pr - 1;
+                }
+            } while (pl <= pr);
 
             return -1;
-        }
 
+        }
         static void Main(string[] args)
         {
             Console.Write("요솟수 : ");
@@ -88,7 +60,7 @@ namespace BinSearch_4
             Console.Write("검색할 값 : ");
             int key = Convert.ToInt32(Console.ReadLine());
 
-            int idx = binSearch4(a, n, key);
+            int idx = binSearchX_5(a, n, key);
 
             if (idx == -1)
             {
