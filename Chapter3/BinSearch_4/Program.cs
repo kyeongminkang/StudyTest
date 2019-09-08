@@ -48,6 +48,7 @@ namespace BinSearch_4
                 //}
                 //Console.WriteLine("{0,4}", star);
 
+            //제발 니가 됐으면 좋겠어.....
             }
 
             for (int i=0; i<n; i++)
