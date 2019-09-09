@@ -19,15 +19,21 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SearchIdx_3", "SearchIdx_3\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinSearch_4", "BinSearch_4\BinSearch_4.csproj", "{12061D18-38A3-4A6C-891A-8E75AAE81C0C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bisSearchX2_5", "bisSearchX2_5\bisSearchX2_5.csproj", "{6A389EC0-69B2-4EED-BAED-CCDD8B355B8F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bisSearchX2_5", "bisSearchX2_5\bisSearchX2_5.csproj", "{6A389EC0-69B2-4EED-BAED-CCDD8B355B8F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinarySearchTester", "BinarySearchTester\BinarySearchTester.csproj", "{86688BC1-AE2A-4458-923D-42A88021E773}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BinarySearchTester", "BinarySearchTester\BinarySearchTester.csproj", "{86688BC1-AE2A-4458-923D-42A88021E773}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinarySearchTest2_6", "BinarySearchTest2_6\BinarySearchTest2_6.csproj", "{07F08BF9-66F8-40AD-ACF3-82D497962C6E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BinarySearchTest2_6", "BinarySearchTest2_6\BinarySearchTest2_6.csproj", "{07F08BF9-66F8-40AD-ACF3-82D497962C6E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdTester", "IdTester\IdTester.csproj", "{BEE5228F-40D9-4D1F-A288-7C6C788170B6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdTester", "IdTester\IdTester.csproj", "{BEE5228F-40D9-4D1F-A288-7C6C788170B6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringBinarySearch", "StringBinarySearch\StringBinarySearch.csproj", "{DA2ED9C7-7139-4771-8BD6-E98C1D592D08}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StringBinarySearch", "StringBinarySearch\StringBinarySearch.csproj", "{DA2ED9C7-7139-4771-8BD6-E98C1D592D08}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhysExamsearch", "PhysExamsearch\PhysExamsearch.csproj", "{D8F15063-E46E-4AFF-9A90-5531E0F046AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhysExamSearch2_7", "PhysExamSearch2_7\PhysExamSearch2_7.csproj", "{81682CE9-5FBC-462B-9EDF-5D4C9F72A3DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericClassTester", "GenericClassTester\GenericClassTester.csproj", "{CA491A41-63AB-4B34-B415-0D13E31FA2D7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +93,18 @@ Global
 		{DA2ED9C7-7139-4771-8BD6-E98C1D592D08}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DA2ED9C7-7139-4771-8BD6-E98C1D592D08}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA2ED9C7-7139-4771-8BD6-E98C1D592D08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8F15063-E46E-4AFF-9A90-5531E0F046AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8F15063-E46E-4AFF-9A90-5531E0F046AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8F15063-E46E-4AFF-9A90-5531E0F046AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8F15063-E46E-4AFF-9A90-5531E0F046AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81682CE9-5FBC-462B-9EDF-5D4C9F72A3DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81682CE9-5FBC-462B-9EDF-5D4C9F72A3DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81682CE9-5FBC-462B-9EDF-5D4C9F72A3DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81682CE9-5FBC-462B-9EDF-5D4C9F72A3DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA491A41-63AB-4B34-B415-0D13E31FA2D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA491A41-63AB-4B34-B415-0D13E31FA2D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA491A41-63AB-4B34-B415-0D13E31FA2D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA491A41-63AB-4B34-B415-0D13E31FA2D7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
