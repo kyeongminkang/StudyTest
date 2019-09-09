@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7D80EF93-4872-4D70-88B6-BAE9449D371C}</ProjectGuid>
+    <ProjectGuid>{9479D703-1E9C-41BB-9C0A-FC7FF7E7B82D}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Chapter4</RootNamespace>
-    <AssemblyName>Chapter4</AssemblyName>
+    <RootNamespace>IntStack_3</RootNamespace>
+    <AssemblyName>IntStack_3</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IntStack.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
