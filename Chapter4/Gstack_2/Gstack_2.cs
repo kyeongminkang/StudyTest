@@ -32,5 +32,9 @@ namespace Gstack_2
                 Console.WriteLine("스택이 가득 참");
             return stk[ptr++] = x;
         }
+
+        static void Main(string[] args)
+        {
+        }
     }
 }

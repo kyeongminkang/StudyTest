@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8A0DAF13-173F-4235-B931-DCDAA4265CE4}</ProjectGuid>
+    <ProjectGuid>{07B60D0B-B831-4E45-A5F6-E2BCCF1AEA0E}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Gstack_2</RootNamespace>
-    <AssemblyName>Gstack_2</AssemblyName>
+    <RootNamespace>LastNElements</RootNamespace>
+    <AssemblyName>LastNElements</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Gstack_2.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
