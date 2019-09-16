@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Chapter6
+namespace BubbleSort3
 {
     class Program
     {
@@ -15,42 +15,45 @@ namespace Chapter6
             a[idx2] = t;
         }
 
-        static void bubbleSort(int[] a, int n)
+        static void BubbleSort(int[] a, int n)
         {
-            for (int i = 0; i < n - 1; i++)
+            int k = 0;
+            while (k < n - 1)
             {
-                for (int j = n - 1; j > i; j--)
-                {
+                int last = n - 1;
+                for (int j = 0; j > k; j--)
+                {                 
                     if (a[j - 1] > a[j])
                     {
                         swap(a, j - 1, j);
+                        last = j;
                     }
                 }
+                k = last;
             }
-        }
 
+        }
         static void Main(string[] args)
         {
-            Console.WriteLine("버블 정렬(버전 1) : ");
+            Console.WriteLine("버블 정렬(버전 3) : ");
             Console.Write("요솟 수 : ");
             int n = Convert.ToInt32(Console.ReadLine());
             int[] x = new int[n];
 
-            for (int i=0; i<n; i++)
+            for (int i = 0; i < n; i++)
             {
                 Console.Write("x[" + i + "] : ");
                 x[i] = Convert.ToInt32(Console.ReadLine());
             }
 
-            bubbleSort(x, n);
+            BubbleSort(x, n);
 
             Console.WriteLine("오름차순으로 정렬했습니다.");
-            for (int i = 0; i< n; i++)
+            for (int i = 0; i < n; i++)
             {
                 Console.WriteLine("x[" + i + "] = " + x[i]);
 
             }
-
         }
     }
 }

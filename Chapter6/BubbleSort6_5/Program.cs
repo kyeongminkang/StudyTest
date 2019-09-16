@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Chapter6
+namespace BubbleSort6_5
 {
     class Program
     {
@@ -17,26 +17,44 @@ namespace Chapter6
 
         static void bubbleSort(int[] a, int n)
         {
-            for (int i = 0; i < n - 1; i++)
+            int left = 0;
+            int right = n - 1;
+
+            int last = right;
+
+            while (left < right)
             {
-                for (int j = n - 1; j > i; j--)
+                for (int j = right; j > left; j--)
                 {
                     if (a[j - 1] > a[j])
                     {
                         swap(a, j - 1, j);
+                        last = j;
+                    }
+
+                }
+                left = last;
+
+                for (int j = left; j < right; j++)
+                {
+                    if (a[j] > a[j + 1])
+                    {
+                        swap(a, j, j + 1);
+                        left = j;
                     }
                 }
+                right = last;
             }
         }
 
         static void Main(string[] args)
         {
-            Console.WriteLine("버블 정렬(버전 1) : ");
+            Console.WriteLine("버블 정렬(양방향 정렬) : ");
             Console.Write("요솟 수 : ");
             int n = Convert.ToInt32(Console.ReadLine());
             int[] x = new int[n];
 
-            for (int i=0; i<n; i++)
+            for (int i = 0; i < n; i++)
             {
                 Console.Write("x[" + i + "] : ");
                 x[i] = Convert.ToInt32(Console.ReadLine());
@@ -45,7 +63,7 @@ namespace Chapter6
             bubbleSort(x, n);
 
             Console.WriteLine("오름차순으로 정렬했습니다.");
-            for (int i = 0; i< n; i++)
+            for (int i = 0; i < n; i++)
             {
                 Console.WriteLine("x[" + i + "] = " + x[i]);
 

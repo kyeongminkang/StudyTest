@@ -4,53 +4,52 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Chapter6
+namespace InsertionSortEx_7
 {
     class Program
     {
-        static void swap(int[] a, int idx1, int idx2)
+        static void insertionSort(int[] a, int n)
         {
-            int t = a[idx1];
-            a[idx1] = a[idx2];
-            a[idx2] = t;
-        }
 
-        static void bubbleSort(int[] a, int n)
-        {
-            for (int i = 0; i < n - 1; i++)
+            for (int i = 2; i < n; i++)
             {
-                for (int j = n - 1; j > i; j--)
+                int tmp = a[0] = a[i];
+                int j = i;
+                for (; a[j - 1] > tmp; j--)
                 {
-                    if (a[j - 1] > a[j])
-                    {
-                        swap(a, j - 1, j);
-                    }
+                    a[j] = a[j - 1];
+
+                }
+
+                if (j > 0)
+                {
+                    a[j] = tmp;
                 }
             }
-        }
 
+        }
         static void Main(string[] args)
         {
-            Console.WriteLine("버블 정렬(버전 1) : ");
+            Console.WriteLine("단순 삽입 정렬 수정");
             Console.Write("요솟 수 : ");
             int n = Convert.ToInt32(Console.ReadLine());
-            int[] x = new int[n];
+            int[] x = new int[n + 1];
 
-            for (int i=0; i<n; i++)
+
+            for (int i = 1; i <= n; i++)
             {
                 Console.Write("x[" + i + "] : ");
                 x[i] = Convert.ToInt32(Console.ReadLine());
             }
 
-            bubbleSort(x, n);
+            insertionSort(x, n + 1);
 
             Console.WriteLine("오름차순으로 정렬했습니다.");
-            for (int i = 0; i< n; i++)
+            for (int i = 1; i <= n; i++)
             {
                 Console.WriteLine("x[" + i + "] = " + x[i]);
 
             }
-
         }
     }
 }
