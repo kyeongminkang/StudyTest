@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace QuickSort2
+namespace QuickSort2Ex_13_2
 {
     public class IntStack
     {
         private int max;
         private int ptr;
-        //private static int ptr;
+        // private static int ptr;
         private int[] stk;
 
         // stack private인 이유! 다른데서 사용해버리면 stack자체 의미가 없음!
