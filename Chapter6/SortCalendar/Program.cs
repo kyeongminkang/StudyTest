@@ -14,13 +14,9 @@ namespace SortCalendar
         {
 
 
-            GregorianCalendar[] x = {
-                new GregorianCalendar()
 
-            };
-
-            
-
+            GregorianCalendar[] x = new GregorianCalendar[3]  ;
+            GregorianCalendar c = new GregorianCalendar();
 
         }
     }
