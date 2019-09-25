@@ -4,29 +4,30 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Chapter8
+namespace BFmatchLast_2
 {
     class Program
     {
         static int bfMatch(string txt, string pat)
         {
-            int pt = 0;
-            int pp = 0;
+            int pt = txt.Length - 1;
+            int pp = pat.Length - 1;
 
-            while(pt != txt.Length && pp != pat.Length)
+            while (pt >= 0 && pp >= 0)
             {
                 if (txt[pt] == pat[pp])
                 {
-                    pt++;
-                    pp++;
-                }else
+                    pt--;
+                    pp--;
+                }
+                else
                 {
-                    pt = pt - pp + 1;
-                    pp = 0;
+                    pt = pt + (pat.Length - pp) - 2;
+                    pp = pat.Length - 1;
                 }
             }
-            if (pp == pat.Length)
-                return pt - pp;
+            if (pp < 0)
+                return pt + 1;
 
             return -1;
         }
@@ -45,10 +46,11 @@ namespace Chapter8
             {
                 Console.WriteLine("텍스트에 패턴이 없습니다.");
 
-            }else
+            }
+            else
             {
                 int len = 0;
-                for (int i=0; i<idx; i++)
+                for (int i = 0; i < idx; i++)
                 {
                     len += s1.Substring(i, i + 1).Length;
 

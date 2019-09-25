@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Chapter8
+namespace BFmatich_1
 {
     class Program
     {
@@ -12,19 +12,58 @@ namespace Chapter8
         {
             int pt = 0;
             int pp = 0;
+            int count = 0;
+            int k = -1;
 
-            while(pt != txt.Length && pp != pat.Length)
+            while (pt != txt.Length && pp != pat.Length)
             {
+                if (k == pt - pp)
+                {
+                    Console.WriteLine("    ");
+                }else
+                {
+                    Console.WriteLine($"{pt - pp:2}");
+                }
+                for (int i=0; i<txt.Length; i++)
+                {
+                    Console.Write(txt[i] + " ");
+                     
+                }
+                Console.WriteLine();
+
+                for(int i= 0; i< pt *2+4; i++)
+                {
+                    Console.Write(" ");
+                }
+                Console.Write(txt[pt] == pat[pp] ? "+" : "|");
+                Console.WriteLine();
+
+
+                for (int i=0; i<(pt-pp)*2+4; i++)
+                {
+                    Console.Write(" ");
+                }
+
+                for (int i=0; i<pat.Length; i++)
+                {
+                    Console.Write(pat[i] + " ");
+                }
+                Console.WriteLine();
+                Console.WriteLine();
+                count++;
+
                 if (txt[pt] == pat[pp])
                 {
                     pt++;
                     pp++;
-                }else
+                }
+                else
                 {
                     pt = pt - pp + 1;
                     pp = 0;
                 }
             }
+            Console.WriteLine($"비교는 {count}회였습니다.");
             if (pp == pat.Length)
                 return pt - pp;
 
@@ -45,10 +84,11 @@ namespace Chapter8
             {
                 Console.WriteLine("텍스트에 패턴이 없습니다.");
 
-            }else
+            }
+            else
             {
                 int len = 0;
-                for (int i=0; i<idx; i++)
+                for (int i = 0; i < idx; i++)
                 {
                     len += s1.Substring(i, i + 1).Length;
 
