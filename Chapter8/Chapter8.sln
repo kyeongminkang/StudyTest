@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KMPmatch", "KMPmatch\KMPmat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KMPmatch_3", "KMPmatch_3\KMPmatch_3.csproj", "{65E8BC57-0870-452D-B482-6843C800298F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BMatch", "BMatch\BMatch.csproj", "{9FBDF995-2FF6-4686-9CA4-8B1454C76152}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BmMatech_4", "BmMatech_4\BmMatech_4.csproj", "{F257A87E-51A1-4AB8-AC8A-26492065826D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,14 @@ Global
 		{65E8BC57-0870-452D-B482-6843C800298F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{65E8BC57-0870-452D-B482-6843C800298F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{65E8BC57-0870-452D-B482-6843C800298F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FBDF995-2FF6-4686-9CA4-8B1454C76152}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FBDF995-2FF6-4686-9CA4-8B1454C76152}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FBDF995-2FF6-4686-9CA4-8B1454C76152}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FBDF995-2FF6-4686-9CA4-8B1454C76152}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F257A87E-51A1-4AB8-AC8A-26492065826D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F257A87E-51A1-4AB8-AC8A-26492065826D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F257A87E-51A1-4AB8-AC8A-26492065826D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F257A87E-51A1-4AB8-AC8A-26492065826D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
