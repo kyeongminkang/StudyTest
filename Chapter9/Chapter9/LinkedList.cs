@@ -52,6 +52,19 @@ namespace Chapter9
             head = crnt = new Node<E>(obj, ptr);
         }
 
+        public void addLast(E obj)
+        {
+            if (head == null)
+                addFirst(obj);
+            else
+            {
+                Node<E> ptr = head;
+                while (ptr.next != null)
+                    ptr = ptr.next;
+                ptr.next = crnt = new Node<E>(obj, null);
+            }
+        }
+
         public void removeFirst()
         {
             if (head != null)
